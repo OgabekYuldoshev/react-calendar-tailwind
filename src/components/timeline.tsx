@@ -48,7 +48,7 @@ export function Timeline() {
                     ? {
                         backgroundSize: "8px 8px",
                         backgroundImage:
-                          "linear-gradient(45deg, transparent 46%, #e5e5e5 49%, #e5e5e5 51%, transparent 55%)",
+                          "linear-gradient(45deg, transparent 46%, var(--border) 49%, var(--border) 51%, transparent 55%)",
                       }
                     : undefined
                 }
