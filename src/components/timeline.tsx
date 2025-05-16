@@ -9,10 +9,14 @@ export function Timeline() {
 
   useMinuteListener((date) => setCurrentMinute(date.getMinutes()));
 
+  const hour = new Date().getHours();
+
   const calculatePercentage = useMemo(
-    () => ((new Date().getHours() * 60 + currentMinute) * 100) / (24 * 60),
-    [currentMinute]
+    () => ((hour * 60 + currentMinute) * 100) / (24 * 60),
+    [currentMinute, hour]
   );
+
+  const hourString = hour > 9 ? hour : `0${hour}`;
 
   return (
     <div className="block relative">
@@ -50,7 +54,8 @@ export function Timeline() {
         <div className="relative pl-11 w-full">
           <hr className="w-full border-b border-red-500" />
           <div className="absolute text-white bg-red-500 text-sm top-0 right-0 px-2 rounded-b">
-            {`11`}:{currentMinute > 9 ? currentMinute : `0${currentMinute}`}
+            {hourString}:
+            {currentMinute > 9 ? currentMinute : `0${currentMinute}`}
           </div>
         </div>
       </div>
