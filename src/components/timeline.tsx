@@ -25,6 +25,7 @@ export function Timeline() {
     if (!timeIndicatorRef.current) return;
     timeIndicatorRef.current.scrollIntoView({
       behavior: "smooth",
+      block: "center",
     });
   }, [timeIndicatorRef]);
 
