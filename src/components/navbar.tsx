@@ -1,5 +1,7 @@
+import { Github } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
+import { buttonVariants } from "./ui/button";
 
 interface NavbarProps {
   tabs: string[];
@@ -21,6 +23,13 @@ export function Navbar({ tabs, tab, setTab }: NavbarProps) {
           </TabsList>
         </Tabs>
         <ModeToggle />
+        <a
+          className={buttonVariants({ variant: "outline", size: "icon" })}
+          href="https://github.com/OgabekYuldoshev/react-calendar-tailwind"
+          target="_blank"
+        >
+          <Github />
+        </a>
       </div>
     </nav>
   );
