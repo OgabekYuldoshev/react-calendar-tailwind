@@ -1,6 +1,6 @@
 # Calendar with Timeline
 
-A simple calendar and timeline project built with React, Vite, Tailwind CSS, and shadcn UI.
+A simple calendar and timeline project built with React, Vite, Tailwind CSS, and Shadcn UI.
 
 ## Installation
 
@@ -22,14 +22,14 @@ npm run dev
 - Timeline view
 - Responsive design
 - Modern technologies (React, Vite, Tailwind CSS)
-- shadcn UI components
+- Shadcn UI components
 
 ## Technologies
 
 - React
 - Vite
 - Tailwind CSS
-- shadcn UI
+- Shadcn UI
 
 ## Usage
 
